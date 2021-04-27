@@ -1,0 +1,47 @@
+﻿<Window x:Class="TestTasks01_LichakRA.InputDataProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTasks01_LichakRA"
+        mc:Ignorable="d"
+        Title="InputDataProduct" Height="500" Width="250">
+    <Grid Background="Lavender">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="0" FontSize="14" Content="Введите штрих - код"> </Label>
+        <TextBox x:Name="barCodeItemInput" Grid.Row="1" Margin="5" 
+                   Background="White" Width="200" Height="25"
+                   HorizontalAlignment="Left" ForceCursor="True"></TextBox>
+
+        <Label Grid.Row="2" FontSize="14" Content="Введите наименование товара"></Label>
+        <TextBox x:Name="nameProductItemInput" Grid.Row="3" Margin="5" 
+                   Background="White" Width="200" Height="25"
+                   HorizontalAlignment="Left" ForceCursor="True"></TextBox>
+
+        <Label Grid.Row="4" FontSize="14" Content="Введите количество товаров"></Label>
+        <TextBox x:Name="quantityProductItemInput" Grid.Row="5" Margin="5" 
+                   Background="White" Width="200" Height="25"
+                   HorizontalAlignment="Left" ForceCursor="True"></TextBox>
+
+        <Label Grid.Row="6" FontSize="14" Content="Описание товара"></Label>
+        <TextBox x:Name="describeProductItemInput" Grid.Row="7" Margin="5" 
+                   Background="White" Width="200" Height="180"
+                   HorizontalAlignment="Left" ForceCursor="True"></TextBox>
+        <Button  Grid.Row="8" Width="100" Height="30" Content="Сохранить" HorizontalAlignment="Left" 
+                    Margin="10" Click="Button_Click"/>
+
+    </Grid>
+    
+</Window>
